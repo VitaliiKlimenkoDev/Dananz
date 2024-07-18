@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preload" href="./dist/css/fonts.css">
+    <link rel="stylesheet" href="./dist/css/contact_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dananz | Contact Us</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="header__logo-link">
+            <img alt="webpage logo dananz" class="logo" width="110" height="47" src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/zaj3am3b94icgjw1irjz">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__links">
+                <li><a href="./index.html" class="secondary-text header__a">Home</a></li>
+                <li><a href="./about.html" class="secondary-text header__a">About Us</a></li>
+                <li><a href="./services.html" class="secondary-text header__a">Services</a></li>
+                <li><a href="./our_teams.html" class="secondary-text header__a">Our Teams</a></li>
+            </ul>
+            <a href="#contact-us-form" class="tittle-btn header__btn" tabindex="0">Contact Us</a>
+            <button class="burger-btn" title="burger">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                 </div>
+            </button>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="main-tittle-block container__fr-tittle">
+            <h2 class="main-tittle-text fr-main-tittle__h">Contact Us</h2>
+            <p class="main-tittle-descrip description fr-main-tittle__par">It is a long established fact that a reader will be 
+                distracted by the readable content of a page when looking at its layout.
+            </p>
+        </section>
+        <form id="contact-us-form" class="container__contact-us-form">
+            <div class="container__contact-us-form-names">
+                <label class="container__contact-us-form-label container__contact-us-form-label-names">
+                    First Name
+                    <input minlength="3" placeholder="First Name" type="text" class="container__contact-us-form-inp" autocomplete="on" required>
+                </label>
+                <label class="container__contact-us-form-label container__contact-us-form-label-names">
+                    Last Name
+                    <input minlength="3" placeholder="Last Name" type="text" class="container__contact-us-form-inp" autocomplete="on">
+                </label>
+            </div>
+            <label class="container__contact-us-form-label">
+                Email
+                <input placeholder="Email" type="email" class="container__contact-us-form-inp" autocomplete="on" required>
+            </label>
+            <label class="container__contact-us-form-label container__contact-us-form-label-tel">
+                Phone Number
+                <input placeholder="Phone Number" type="tel" class="container__contact-us-form-inp container__contact-us-form-tel" autocomplete="on">
+                <select class="container__contact-us-form-country-sel">
+                    <option value="US" class="container__contact-us-form-option" selected>US</option>
+                    <option value="UK" class="container__contact-us-form-option">UK</option>
+                </select>
+            </label>
+            <label class="container__contact-us-form-label">
+                Message
+                <textarea placeholder="Your Message" class="container__contact-us-form-text" maxlength="1000"></textarea>
+            </label>
+            <button formaction="" type="submit" class="tittle-btn container__contact-us-form-submit">Send Message</button>
+        </form>
+        <section class="location">
+            <p class="capture location__capture">Loaction</p>
+            <div class="location__text-block">
+                <div class="location__text-block-contacts">
+                    <div class="location__text-block-eg">
+                        <p class="main-tittle location__text-block-eg-tittle">Visit Our Stores</p>
+                        <p class="description">Find us at these locations.</p>
+                    </div>
+                    <div class="location__text-block-eg">
+                        <p class="second-tittle">Email</p>
+                        <address class="description location__text-block-eg-addr"><a href="mailto:dananz@gmail.com">dananz@gmail.com</a></address>
+                    </div>
+                    <div class="location__text-block-eg">
+                        <p class="second-tittle">Phone</p>
+                        <address class="description location__text-block-eg-addr"><a href="tel:+62 815 002 1000">+62 815 002 1000</a></address>
+                    </div>
+                </div>
+                <div class="location__text-block-places">
+                    <div class="location__text-block-places-eg">
+                        <p class="second-tittle">Jakarta</p>
+                        <p class="description location__text-block-places-eg-desctip">Customize your interior design into a 
+                            dream place with the 
+                            best designers 
+                            and quality furniture. We try our best to fulfill your expectations.
+                        </p>
+                    </div>
+                    <div class="location__text-block-places-eg">
+                        <p class="second-tittle">Surakarta</p>
+                        <p class="description location__text-block-places-eg-desctip">Customize your interior design into a 
+                            dream place with the 
+                            best designers 
+                            and quality furniture. We try our best to fulfill your expectations.
+                        </p>
+                    </div>
+                    <div class="location__text-block-places-eg">
+                        <p class="second-tittle">Yogyakarta</p>
+                        <p class="description location__text-block-places-eg-desctip">Customize your interior design into a 
+                            dream place with the 
+                            best designers 
+                            and quality furniture. We try our best to fulfill your expectations.
+                        </p>
+                    </div>
+                    <div class="location__text-block-places-eg">
+                        <p class="second-tittle">Bandung</p>
+                        <p class="description location__text-block-places-eg-desctip">Customize your interior design into a 
+                            dream place with the 
+                            best designers 
+                            and quality furniture. We try our best to fulfill your expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="blue-section body__blue-section">
+        <div class="container">
+            <div class="blue-section__block">
+                <p class="main-tittle blue-section__tittle">let's discuss making your interior like a dream place!</p>
+                <div class="blue-section__btns">
+                    <p class="description blue-section__description">Contact us below to work together 
+                        to build your amazing interior
+                    </p>
+                    <a href="#contact-us-form" class="tittle-btn blue-section__btn" tabindex="0">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <footer class="footer">
+            <div class="bottom-logo">
+                <a href="./index.html" class="footer__logo-link">
+                    <img src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/zaj3am3b94icgjw1irjz" alt="logo" class="logo">
+                </a>
+                <p class="main-tittle footer__text">One of the best furniture agency.</p>
+            </div>
+            <div class="footer-forms">
+                <div class="footer-form-div">
+                    <form action="" class="footer-form">
+                        <p class="description footer__description">Enter  your email to get the laterst news</p>
+                        <input placeholder="Email Address" type="email" name="email" id="email" class="footer-inp">
+                    </form>
+                </div>
+                <div class="socials-div">
+                    <p class="secondary-text">Follow us On</p>
+                    <div class="socials-link-div">
+                        <a href="#" class="socials-link">
+                            <img alt="facebook" loading="lazy" width="21" height="21" class="socials-img" src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/opnbbphkzcnerioqq4bv">
+                        </a>
+                        <a href="#" class="socials-link">
+                            <img alt="instagram" loading="lazy" width="21" height="21" class="socials-img" src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/oyfnzmyviutvrcbonefz">
+                        </a>
+                        <a href="#" class="socials-link">
+                            <img alt="tiktok" loading="lazy" width="21" height="21" class="socials-img" src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/hwleyjhy4ds2gvuipxmv">
+                        </a>
+                        <a href="#" class="socials-link">
+                            <img alt="youtube" loading="lazy" width="21" height="21" class="socials-img" src="https://res.cloudinary.com/ducmdk54f/image/upload/q_auto/v1/Dananz/zpge5f9vvtmbou4j16vo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button class="toup-btn" hidden title="to beginning of the page"></button>
+
+    <script src="./dist/script.min.js"></script>
+</body>
