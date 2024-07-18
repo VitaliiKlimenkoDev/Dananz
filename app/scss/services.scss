@@ -1,0 +1,76 @@
+@import './blocks';
+
+
+.container__s-tittle {
+    margin: rem(60px) 0 rem(57px) 0;
+    @media (max-width: 401px) {
+        & {
+            margin: 45px 0 37px 0;
+        }
+    }
+}
+.s-main-tittle__par {
+    max-width: rem(518px);
+}
+
+.bonus-achivements {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40px);
+    margin: rem(100px) 0;
+    &__capture {
+        @include capture-line(26px, 464px);
+    }
+    &__eg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 646px) {
+            & {
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 10px;
+            }
+        }
+    }
+    &__eg-image {
+        width: calc(746 / 1200 * 100%);
+        @media (max-width: 871px) {
+            & {
+                width: 59.166667%;
+            }
+        }
+        @media (max-width: 791px) {
+            & {
+                width: 54.166667%;
+            }
+        }
+        @media (max-width: 646px) {
+            & {
+                width: 75%;
+            }
+        }
+        @media (max-width: 551px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+    &__eg-text-sec {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20px);
+        @media (max-width: 646px) {
+            & {
+                row-gap: 0.5rem;
+            }
+        }
+    }
+    &__eg-text-par {
+        max-width: rem(334px);
+    }
+}
+
+.container__services-pthemes {
+    margin-bottom: rem(103px);
+}

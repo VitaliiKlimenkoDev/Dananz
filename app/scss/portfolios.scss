@@ -1,0 +1,96 @@
+@import './blocks';
+
+
+.container__fif-tittle {
+    margin: rem(60px) 0 rem(57px) 0;
+}
+.fif-main-tittle__par {
+    max-width: rem(518px);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40px);
+    margin-top: rem(100px);
+    &__capture {
+        @include capture-line(23px, 511px);
+    }
+    &__btns {
+        margin-top: rem(156px);
+        @media (max-width: 901px) {
+            & {
+                margin-top: 10px;
+                row-gap: 5px;
+            }
+        }
+        @media (max-width: 601px) {
+            & {
+                align-items: flex-start;
+            }
+        }
+    }
+    &__btns-text {
+        @media (max-width: 901px) {
+            & {
+                max-width: 14rem;
+            }
+        }
+    }
+    &__s-part {
+        flex-direction: row-reverse;
+        @media (max-width: 901px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+    &__f-part {
+        @media (max-width: 901px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+    &__s-part, &__f-part {
+        @media (max-width: 601px) {
+            & {
+                align-items: flex-start;
+            }
+        }
+    }
+    &__s-avatar {
+        left: unset;
+        right: calc(803 / 883 * 100%);
+        @media (max-width: 901px) {
+            & {
+                left: 0;
+                right: unset;
+                top: 0;
+                background-color: rgba($color: #fff, $alpha: 0.8);
+            }
+        }
+    }
+    &__f-avatar {
+        @media (max-width: 901px) {
+            & {
+                left: 0;
+                right: unset;
+                top: 0;
+                background-color: rgba($color: #fff, $alpha: 0.8);
+            }
+        }
+    }
+    &__avatar-img {
+        @media (max-width: 901px) {
+            & {
+                width: 80%;
+            }
+        }
+        @media (max-width: 601px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+}

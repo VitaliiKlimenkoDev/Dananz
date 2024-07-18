@@ -1,0 +1,108 @@
+@import './blocks';
+
+
+.container__s-tittle {
+    margin: rem(60px) 0 rem(53px) 0;
+}
+.s-main-tittle__par {
+    max-width: rem(518px);
+}
+.s-main-tittle__h {
+    @media (max-width: 451px) {
+        & {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+
+.portfolio-details {
+    margin: rem(100px) 0 rem(82px) 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: calc(32 / 1200 * 100%);
+    @media (max-width: 791px) {
+        & {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: rem(calc(0.026666666667 * 790px));
+        }
+    }
+    @media (max-width: 501px) {
+        & {
+            text-align: center;
+        }
+    }
+
+    &__descrip-column-one {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(24px);
+        @media (max-width: 791px) {
+            & {
+                row-gap: 1.1rem;
+            }
+        }
+    }
+    &__descrip-col-text {
+        max-width: rem(584px);
+    }
+    &__descrip-col-text-data-block  {
+        display: flex;
+        column-gap: rem(80px);
+        margin-top: rem(36px);
+        @media (max-width: 791px) {
+            & {
+                margin-top: 0;       
+            }
+        }
+        @media (max-width: 501px) {
+            & {
+                column-gap: 0;
+                justify-content: space-around;
+            }
+        }
+        @media (max-width: 401px) {
+            & {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__descrip-colummn-two {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(24px);
+    }
+}
+
+
+.portfolio-images {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(32px);
+    margin-bottom: rem(100px);
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 501px) {
+            & {
+                flex-direction: column;
+                justify-content: unset;
+                row-gap: 2rem;
+            }
+        }
+    }
+    &__section-f-img, &__section-s-img {
+        width: calc(584 / 1200 * 100%);
+        @media (max-width: 501px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+    &__middle-img {
+        width: 100%;
+    }
+}
